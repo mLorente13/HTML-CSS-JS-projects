@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100dvw;
+    height: 100dvh;
+    font-family: 'Roboto', system-ui;
+}
+
+.container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.collapse-card {
+    position: relative;
+    margin: .5rem;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 10px;
+    height: 60px;
+    transition: all ease .4s;
+}
+
+.collapse-content {
+    opacity: 0;
+    transition: all cubic-bezier(.84,0,.37,.27) .1s;
+}
+
+.chevron-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+}
+
+.chevron-icon.active {
+    transform: rotate(180deg);
+}
+
+.collapse-card.active {
+    height: 100px;
+}
+
+.collapse-card.active .collapse-content {
+    opacity: 1;
+}
