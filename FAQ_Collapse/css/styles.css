@@ -20,6 +20,12 @@ body {
     margin: auto 0;
 }
 
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .title {
     font-size: 2rem;
 }
@@ -36,14 +42,12 @@ body {
 }
 
 .collapse-content {
+    margin: 0;
     opacity: 0;
     transition: all cubic-bezier(.84,0,.37,.27) .1s;
 }
 
 .chevron-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     cursor: pointer;
     transition: all ease-in-out .4s;
 }
