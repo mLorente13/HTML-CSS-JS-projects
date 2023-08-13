@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #333;
+  color: white;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.projects {
+  width: 60dvw;
+  margin: auto;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.project {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  height: 350px;
+  border-radius: 20px;
+  background-image: url("../assets/weather-app.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.expanding-cards {
+  background-image: url("../assets/expanding-cards.png");
+}
+
+.faq-collapse {
+  background-image: url("../assets/faq-collapse.png");
+}
+
+.progress-steps {
+  background-image: url("../assets/progress-steps.png");
+}
+
+.split-landing-page {
+  background-image: url("../assets/split-landing-page.png");
+}
+
+.project::before {
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 5;
+  opacity: 0;
+  border-radius: inherit;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  transition: all ease 0.4s;
+  height: 100%;
+  width: 100%;
+}
+
+.project:hover::before {
+  opacity: 0.7;
+}
+
+.project-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  left: 20px;
+  opacity: 0;
+  transition: all ease 0.5s;
+  z-index: 10;
+}
+
+.project:hover .project-text {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: #f2f6f8;
+  margin: 1rem 0;
+}
+
+.project-icon {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 20px;
+  color: white;
+  opacity: 0;
+  transition: all ease 0.5s;
+  height: 30px;
+  width: 30px;
+  z-index: 10;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.project-icon > img {
+  height: 30px;
+  width: 30px;
+  transition: all ease 0.4s;
+}
+
+.project-icon:hover.project-icon > img {
+  opacity: 0.6;
+  scale: 1.2;
+}
+
+.project:hover .project-icon {
+  opacity: 1;
+}
+
