@@ -9,3 +9,4 @@ Trying to complete @bradtraversy challenge
 | 02  | Progress Steps                              | [Live Demo](https://mlorente13.github.io/50-projects-50-days/Progress_Steps/)|
 | 03  | Split Landing Page                          | [Live Demo](https://mlorente13.github.io/50-projects-50-days/Split_Landing_Page/)|
 | 04  | FAQ Collapse                                | [Live Demo](https://mlorente13.github.io/50-projects-50-days/FAQ_Collapse/)|
+| 05  | Hidden Search Widget                        | [Live Demo](https://mlorente13.github.io/50-projects-50-days/Hidden_Search_Widget/)|
