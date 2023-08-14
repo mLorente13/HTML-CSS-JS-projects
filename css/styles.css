@@ -10,17 +10,17 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #333;
   color: white;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100%;
 }
 
 .projects {
   width: 60dvw;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .title {
   margin-top: 0;
+  font-size: 3rem;
 }
 
 .projects-grid {
@@ -55,6 +55,10 @@ body {
 
 .split-landing-page {
   background-image: url("../assets/split-landing-page.png");
+}
+
+.hidden-search-widget {
+  background-image: url("../assets/hidden-search-widget.png");
 }
 
 .project::before {
