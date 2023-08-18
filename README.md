@@ -1,6 +1,4 @@
-# 50-projects-50-days
-
-Trying to complete @bradtraversy challenge
+HTML/CSS/JS projects
 
 
 |  #  | Project                                                                                                                     | Live Demo                                                                         |
