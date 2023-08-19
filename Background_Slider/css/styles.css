@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Viga&display=swap');
+
+:root {
+    --sliderProgressWidth: 0%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', system-ui;
+    height: 100dvh;
+    width: 100dvw;
+    color: #fff;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all ease .3s;
+}
+
+.bg-1 {
+    background-image: url('../assets/bg-1.png');
+}
+
+.bg-2 {
+    background-image: url('../assets/bg-2.png');
+}
+
+.bg-3 {
+    background-image: url('../assets/bg-3.png');
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 269px;
+}
+
+.header-links {
+    display: flex;
+}
+
+.header-link {
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.header-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    transition: all ease .4s;
+}
+
+.header-link:hover.header-link::after {
+    width: 100%;
+}
+
+.header-icons svg {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.header-icons svg:hover {
+    opacity: .7;
+}
+
+.about {
+    margin-left: 88px;
+}
+
+.about-subtitle {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.about-title {
+    font-family: 'Viga';
+    margin: 0;
+    margin-top: -30px;
+    font-size: 170px;
+    line-height: normal;
+}
+
+.about-description {
+    width: 515px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    margin-left: 12px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.about-link {
+    margin: 30px 15px 0 12px;
+    list-style-type: circle;
+    font-size: 1.5rem;
+}
+
+.about-link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+}
+
+.slider {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider-center {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.slider span {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: .7;
+}
+
+.slider-progress {
+    display: inline-block;
+    width: 90%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.slider-progress::before {
+    content: '';
+    position: relative;
+    top: -12px;
+    display: inline-block;
+    width: var(--sliderProgressWidth);
+    height: 3px;
+    background-color: #fff;
+    transition: all ease .4s;
+}
