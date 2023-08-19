@@ -61,6 +61,10 @@ body {
   background-image: url("../assets/hidden-search-widget.png");
 }
 
+.background-slider {
+  background-image: url("../assets//background-slider.jpg");
+}
+
 .project::before {
   content: "";
   display: block;
