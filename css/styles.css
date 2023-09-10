@@ -62,7 +62,7 @@ body {
 }
 
 .background-slider {
-  background-image: url("../assets//background-slider.jpg");
+  background-image: url("../assets/background-slider.png");
 }
 
 .project::before {
