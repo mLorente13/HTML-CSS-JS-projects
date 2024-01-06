@@ -35,38 +35,38 @@ body {
   position: relative;
   height: 350px;
   border-radius: 20px;
-  background-image: url("../assets/weather-app.jpg");
+  background-image: url("./assets/faq-collapse.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .expanding-cards {
-  background-image: url("../assets/expanding-cards.png");
+  background-image: url("./assets/expanding-cards.png");
 }
 
 .faq-collapse {
-  background-image: url("../assets/faq-collapse.png");
+  background-image: url("./assets/faq-collapse.png");
 }
 
 .progress-steps {
-  background-image: url("../assets/progress-steps.png");
+  background-image: url("./assets/progress-steps.png");
 }
 
 .split-landing-page {
-  background-image: url("../assets/split-landing-page.png");
+  background-image: url("./assets/split-landing-page.png");
 }
 
 .hidden-search-widget {
-  background-image: url("../assets/hidden-search-widget.png");
+  background-image: url("./assets/hidden-search-widget.png");
 }
 
 .background-slider {
-  background-image: url("../assets/background-slider.png");
+  background-image: url("./assets/background-slider.png");
 }
 
 .timer {
-  background-image: url("../assets/timer.png");
+  background-image: url("./assets/timer.png");
 }
 
 .project::before {
