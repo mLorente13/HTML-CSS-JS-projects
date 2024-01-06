@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="light">
+    <header class="header">
+        <i class="themeSelector__btn fa-regular fa-sun"></i>
+    </header>
+    <section class="timer">
+        <div class="timer__container">
+            <div class="timer__container__time">
+                <span class="timer__container__time__hours">00</span>
+                <span>:</span>
+                <span class="timer__container__time__minutes">00</span>
+                <span>:</span>
+                <span class="timer__container__time__seconds">00</span>
+            </div>
+            <div class="timer__container__btns">
+                <button class="timer__container__btn start"><i class="fa-solid fa-play"></i></button>
+                <button class="timer__container__btn stop" disabled><i class="fa-solid fa-pause"></i></button>
+                <button class="timer__container__btn reset"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            </div>
+    </section>
+    <script src="https://kit.fontawesome.com/8b0d39291b.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
