@@ -39,11 +39,12 @@ let timerHours = document.querySelector(".timer__container__time__hours");
 let timerMinutes = document.querySelector(".timer__container__time__minutes");
 let timerSeconds = document.querySelector(".timer__container__time__seconds");
 let seconds = 0;
+let interval;
 let minutes = 0;
 let hours = 0;
 
 function startTimer() {
-    setInterval(function () {
+    interval = setInterval(function () {
         seconds++;
         if (seconds == 60) {
             seconds = 0;
